@@ -7,7 +7,7 @@
 如：
 
 ls -al     
-ls -a -l
+ls -a -l 可缩写为:ll
 ## -a
 默认查看ls中所有home/user 所有目录 类似win中dir
 ## -l

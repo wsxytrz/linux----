@@ -12,10 +12,12 @@
 -d /etc/passwd 中记录的主目录
 删除
 * userdel [-r] 用户名
+-r 删除更彻底
 
 修改用户所属组
-* usermod -aG 用户名 用户组名
-
+* usermod 
+-aG 用户名 用户组名         追加
+-g                         改变
 查看用户所属组
 * id [用户名]
 
@@ -26,8 +28,8 @@
 **用户有 UID（如 1002），可以登录、有家目录。
 组有 GID（如 1002），用于文件权限管理，不能登录。**
 查看所有用户
-cat /etc/passwd
+cat /etc/passwd 或getent passwd
 查看所有组
-cat /etc/group
+cat /etc/group  或getent group
 
 
